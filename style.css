@@ -17,11 +17,11 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: transparent; /* Прозорий фон */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Тонка лінія внизу */
+    background-color: transparent; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
     width: 100%;
     top: 0;
-    z-index: 1000; /* Щоб панель завжди була поверх іншого контенту */
+    z-index: 1000;
 }
 
 .navbar {
@@ -56,7 +56,6 @@ header {
     height: auto;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -69,17 +68,16 @@ header {
 }
 
 .hero-title {
-    font-size: 18rem; /* Великий розмір шрифту */
-    color: #D4DAFD33; /* Напівпрозорий колір */
+    font-size: 18rem; 
+    color: #D4DAFD33; 
     position: absolute;
-    top: 30%; /* Центруємо текст по вертикалі */
-    left: 50%; /* Центруємо по горизонталі */
-    transform: translate(-50%, -50%) scaleY(1.5); /* Центруємо та розтягуємо текст по вертикалі */
-    z-index: 1; /* Рівень для розташування під дроном */
-    letter-spacing: 8px; /* Відстань між літерами */
-    line-height: 1; /* Міжрядковий інтервал */
-    white-space: nowrap; /* Текст не переноситься на новий рядок */
-}
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scaleY(1.5); 
+    z-index: 1; 
+    letter-spacing: 8px; 
+    line-height: 1; 
+    white-space: nowrap; 
 
 
 .drone-image {
@@ -124,7 +122,6 @@ header {
 
 }
 
-/* Блок для слайд-меню справа */
 .slide-menu {
     position: fixed;
     right: 10px;
@@ -133,7 +130,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40px; /* Зменшена ширина меню */
+    width: 40px; 
     height: auto;
     background-color: transparent;
 }
@@ -152,7 +149,7 @@ header {
 
 .slide-label {
     writing-mode: vertical-rl;
-    transform: rotate(180deg); /* Для вертикального тексту знизу догори */
+    transform: rotate(180deg); 
     margin-bottom: 10px;
 }
 
@@ -161,28 +158,25 @@ header {
     margin-top: 10px;
 }
 
-/* Контейнер для кола */
 .circle-with-play {
     width: 30px;
     height: 30px;
-    background-color: white; /* Білий фон кола */
-    border-radius: 50%; /* Робимо коло */
+    background-color: white; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
 }
 
-/* Трикутник всередині кола */
 .triangle {
     width: 0;
     height: 0;
-    border-left: 6px solid black; /* Чорний колір трикутника */
+    border-left: 6px solid black; 
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
 }
 
-/* Лінія між елементами */
 .line {
     width: 1px;
     height: 30px;
@@ -194,17 +188,16 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 1000px; /* Ширина свічення */
-    height: 1000px; /* Висота свічення */
+    width: 1000px; 
+    height: 1000px; 
     background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
     transform: translate(-50%, -50%);
-    pointer-events: none; /* Щоб не заважало клікам */
-    z-index: 0; /* Зробимо його за основним контентом */
+    pointer-events: none; 
+    z-index: 0; 
 }
 
 .main-content {
     position: relative;
-    z-index: 1; /* Основний контент поверх свічення */
+    z-index: 1; 
 }
-
 
